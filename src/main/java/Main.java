@@ -1,10 +1,8 @@
-import java.util.ArrayList;
-
-import static java.lang.String.join;
-
 /**
  * Created by NHJIEJAN on 24/01/2017.
  */
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -16,9 +14,8 @@ public class Main {
         test.add("test2");
         test.add("test3");
 
-        // REDIS_host, SNOWFLAKE_HOSTm SNOWFLAKE_PORT, <list of fields>
+        // REDIS_host, SNOWFLAKE_HOST, SNOWFLAKE_PORT, [list of fields]
         jedisConnect.getJedisGuid("localhost", "http://localhost", "8182", test);
-
 
         }
     }
